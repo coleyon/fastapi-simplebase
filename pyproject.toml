@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "demostack"
+version = "0.1.0"
+description = "Docker image with Uvicorn managed by Gunicorn for FastAPI web APIs in python 3.9 with linux."
+authors = ["coleyon <24493192+coleyon@users.noreply.github.com>"]
+license = "MIT License"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.73"}
+aiofiles = "^0.8.0"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.931"
+autoflake = "^1.4"
+isort = "^5.10.1"
+pytest = "^6.2.5"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
